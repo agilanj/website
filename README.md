@@ -1,5 +1,5 @@
 # Ex.07 Restaurant Website
-# Date: 14-12-2024
+# Date: 23-12-2024
 # AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
 
@@ -27,216 +27,651 @@ Publish the website in the given URL.
 
 # PROGRAM:
 ~~~
-<html>
-    <head>
-        <title> Golden Plate Restaurant  </title>
-        
-    </head>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
-    <style>
-        h1,ul{
-            display: inline;
-            padding:20px;
-            
-           
-        }
-        h1{
-            margin-left: 10px;
-        }
-        nav{
-            padding: 20px;
-           background-color:lightgray;
-          color: rgb(15, 12, 96);
-        }
-        .top{
-            
-           padding: 20px;
-           background-color:lightgray;
-          color: rgb(15, 12, 96);
-          border-radius: 65px;
-          background: linear-gradient(black)
-        }
-        li{
-            
-            display: inline;
-            color: black;
-            font-style: italic;
-            
-        }
-        li:hover{
+home.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restarent page</title>
+    <link rel="stylesheet" href="res.css">
+</head>
+<header>
+   <div class="name">
+     <li class="name1">🍔MR.</li> 
+    <li class="name2">Honey🍯</li><br>
+</div>
+</header>
 
-            color: red;
-            cursor: pointer;
-        }
-        ul{
-            margin-left: 80px;
-           
-        }
-       
-        input{
-            padding: 20px;
-            width: 50%;
-           
-        }
-        .searchbar{
-            margin-left: 20%;
-            padding: 15px;
-       
-        }
-        h2{
-            text-align: center;
-            font-size: 40px;
-        }
-        .img{
-            display: inline-block;
-            width: 420px;
-            border-width: 2px;
-            border-color: slategray;
-            border-style: solid;
-            margin-left: 30px;
-
-        }
-        .img:hover{
-            
-            color: blueviolet;
-        }
-        .info{
-            margin-left: 35%;
-            margin-right: 45%;
-            border-width: 2px;
-            border-style:inset;
-            padding: 10px;
-            margin-top: 20px;
-            
-        }
-      
-
-    </style>
-    <body style="background-color: slategray;">
-        <nav class="top">
-            <h3 > Opening time 🕥: 10.00 am - 11.00 pm</h3>
-           <h1 style="font-size: 80px;"> 𝓖𝓸𝓵𝓭𝓮𝓷 𝓟𝓵𝓪𝓽𝓮 𝓡𝓮𝓼𝓽𝓪𝓾𝓻𝓪𝓷𝓽</h1><h5 style="display: inline;">&lpar;NONVEG&rpar;</h5>
-            
-           <img src="retaurantlogo.webp" width="200px" height="170px" style="margin-left: 85px;" >
-        
-           
-            <ul>
-                <li>MENU |</li>
-                <li>RATINGS |</li>
-                <li>BLOG |</li>
-                <li>COUPON |</li>
-                <li> ONLINE ORDER</li>
-                
-
-            </ul>
-        </nav><br>
-
-        <hr><br><center>
-              <div class="serchbar">
-                <input placeholder="Search"> 
-             </div></center>
-        <div>
-            <h2   >
-                FOOD MENU
-            </h2>
-            
-        </div>
-        <div class="img">
-
-        <img src="main dish.jpg" width="420px" height="300px" ><br>
-       
-       <ol ><li style="font-weight: bolder;" style="word-spacing: 210px;">DISH                         PRICES</li><br>
-           <li style="word-spacing: 145px;">Chicken_briyani                       200/-</li><br> 
-           <li style="word-spacing: 152px;"> Mutton_briyani                       250/-</li><br> 
-           <li style="word-spacing: 126px;">Chiken_Fried_rice                     150/-</li><br> 
-           <li style="word-spacing: 145px;">Egg_Fried_rice                        120/-</li><br> 
-           <li style="word-spacing: 170px;">Egg_briyani                           180/- </li><br> 
-           <li style="word-spacing: 133px;">Chicken_Noodles                       150/-</li><br> 
-           <li style="word-spacing: 160px;">Egg_Noodles                           120/-</li><br> 
-           <li style="word-spacing: 120px;">Schezwan_Noodles                      130/-</li><br> 
-           <li style="word-spacing: 157px;">Mutton_curry                          100/-</li><br> 
-           <li style="word-spacing: 157px;">Chicken_curry                         90/-</li><br> 
-           <li style="word-spacing: 183px;">Egg_curry                             70/-</li>
-        </ol> 
-       </div>
-        <div class="img">
-
-            <img src="starter image.jpg" width="420px" height="300px" ><br>
-            
-        <ol>
-            <li style="word-spacing: 200px;">STARTER                     PRICES</li><br>
-           <li style="word-spacing: 150px;">Chicken_spring_roll                 100/-</li><br> 
-           <li style="word-spacing: 195px;">Chilli_prawns                    130/-</li><br> 
-           <li style="word-spacing: 140px;">Chicken_manuchurian                     110/-</li><br> 
-           <li style="word-spacing: 222px;">Meatballs                     170/-</li><br> 
-           <li style="word-spacing: 188px;">Mutton_keema                         180/- </li><br> 
-           <li style="word-spacing: 215px;">Chicken_65                       80/-</li><br> 
-           <li style="word-spacing: 212px;">Mutton_85                           180/-</li><br> 
-           <li style="word-spacing: 211px;">sheek_kebab                      90/-</li><br> 
-           <li style="word-spacing: 198px;">cheese_omelete                          70/-</li><br> 
-           <li style="word-spacing: 139px;">Crispy_chicken_nuglets                        90/-</li><br> 
-           <li style="word-spacing: 245px;">Egg_65                             60/-</li>
-            
-        </ol>
-    </div> 
-        <div class="img">
-
-             <img src="beverages image.jpg" width="420px" height="300px" ><br>
-       
-            <ol>
-                <li style="word-spacing: 150px;">BEVARAGES                    PRICES</li><br>
-           <li style="word-spacing: 175px;">Milkshakes                 100/-</li><br> 
-           <li style="word-spacing: 225px;">Tea                  130/-</li><br> 
-           <li style="word-spacing: 171px;">Cappuccino                     110/-</li><br> 
-           <li style="word-spacing: 204px;">Mojito                     170/-</li><br> 
-           <li style="word-spacing: 180px;">Lemonade                        180/- </li><br> 
-           <li style="word-spacing: 188px;">Ice_cream                       80/-</li><br> 
-           <li style="word-spacing: 172px;">Soft_drinks                           180/-</li><br> 
-           <li style="word-spacing: 185px;">Rose_milk                     90/-</li><br> 
-           <li style="word-spacing: 183px;">Fresh_juice                         70/-</li><br> 
-           <li style="word-spacing: 193px;">Mocktails                        90/-</li><br> 
-           <li style="word-spacing: 202px;">Desserts                            60/-</li>
-
-            </ol>
-
-    </div> 
-        <br><br>
-        <hr><br>
-<footer>
-        <nav>
-        <div style="margin-left: 37%;">
-            Contact us : More information<br>  </div>
-         <center>
-         <div class="info" >   
-            📞 +91 5345668462<br>
-            🌐 www.GoldeplateRestaurant.in<br>
-            📍 11,Any st,Any city,143.
-         </div></center>
-         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam quo commodi, quas eveniet quis non repellat, minima incidunt impedit quam maxime quia tempora reprehenderit maiores! Corrupti amet at ex nemo laboriosam accusantium facilis. Quo tempore, tenetur accusantium neque voluptatibus obcaecati voluptatem hic quisquam deleniti nihil repellendus magnam doloremque quae?
-         </p>
-
-    </nav>
-</footer>
-        
-
-  
-    </body>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="res.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="admin.html">ADMINISTRATION</a></li>
+            <li><a href="contect.html">CONTACT US</a></li>
+        </ul> 
+    </div>
+    <div class="food">
+        <center>
+         <table>
+            <tr>
+                <td><p>OUR RESTARENT IS UNIQUE</p><br><img src="cooking.jpeg"><br>our restarent is very spcial in burger.<br>we make burger in pure attapowder<br>we useing only contery chicken.<br>   <br>   <br> <br></td>
+                <td><center><p>FACILITIES</center><br></p><img src="restarent.jpeg"><br>we have luxery outlook.we<br> are NO.1 in india.we have<br> party hall also and we provide<br>inernational drinks and we gave<br>our own brand jigarthanda also<br>     <br>  <br></td>
+                <td><p>WORKING DAYS</p><br><img src="chef.jpeg"><center>our restarent working time</center><br>MONDAY TO SUNDAY<BR>10:00AM-11:00PM<BR>MONDAY IT'S OUR OFFER DAY<BR> <a href="menu.html">GO TO MENU AND PLASE ORDER</a> </td>
+            </tr>
+         </table>
+        </center>
+    </div>
+    <div class="offer">
+      <center>
+        <table>
+            <tr>
+          <td>
+            <p class="title">OUR FRIDAY FRY CHICKEN OFFER IS GOING ON....</p><BR>
+                <P class="title1">YOU AER A FIRST COSTOMER GET YOUR FLAT 50% OFFER.we provide many offer like buy one get one offer in 🍔burgur and 🍕pizza.we contect some contest and we provide unlimited food for winers.if you order through our web site and get extra offers.</P>
+        </td>
+           </tr>
+        </table>
+    </center> 
+    </div>
+    <footer>
+       <hr style="color: rgb(91, 38, 38);"> 
+       <center>
+      <p class="author">DISIGNED AND DEVLOPED BY </p><P class="name">CHANDRU.K</P>
+    </center>
+    </footer>
+</body>
 </html>
+
+home.css
+
+header{
+    ;
+}
+.name{
+    margin-top: 13px;
+    margin-left: 45%;
+}
+.name1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 39px;
+    color: rgba(215, 49, 7, 0.803);
+    
+}
+.name2{
+    font-family: cursive;
+    font-size: 37px;
+    color: rgba(222, 215, 13, 0.97);
+    font-weight: bold;
+    
+}
+li{
+    float: left;
+    list-style: none;
+}
+
+ul li a{
+display: flex;
+padding-left: 50px;
+padding-right: 50px;
+color: aquamarine;
+}
+ul li a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+.menu{
+    margin-top: 60px;
+    margin-left: 330px;
+    border-width: 30px;
+    border-color: aquamarine;
+    background-color: rgb(84, 92, 92);
+    display: inline-flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(176, 129, 100);
+    border-radius:  25px;
+}
+.food{
+    margin-top: 90px;
+    padding: 14px;
+}
+td{
+padding: 20px;
+background-color: bisque;
+border-width: px;
+border-radius: 18px;
+white-space: 5px;
+}
+tr{
+    padding: 5px;
+}
+p{
+    font-weight: bolder;
+    align-items: center;
+}
+img{
+    align-items: center;
+}  
+.offer table tr{
+    width: 70%;
+}
+.offer td{
+    background-image: url(footer.jpeg);
+    width: 900px;
+    height: 150px;
+    align-items: center;
+    border-color: rgb(219, 8, 152);
+    border-width: 5px;
+    border-radius: 20px;
+    border-style: double;
+}
+.offer .title{
+    color: rgb(214, 210, 210);
+    font-size:xx-large ;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    ;
+}
+.offer .title1{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: larger;
+}
+footer .author{
+    color: rgb(245, 126, 7);
+    
+}
+footer .name{
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 50px;
+    font-size: larger;
+    color: rgb(220, 22, 68);
+}
+
+menu.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <center>
+        <h1>OUR  SPICHAL  MENU</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="res.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="admin.html">ADMINISTRATION</a></li>
+                <li><a href="contect.html">CONTACT US</a></li>
+            </ul> 
+        </div>
+    <table>
+        <tr>
+            <td><img src="burger.jpeg">   <br><button href="#">order</button><br>chicken burker</td>
+            <td><img src="bireyani.jpeg"> <br><button href="#">order</button><br>tum biriyani</td>
+            <td><img src="dosa.jpeg">     <br><button href="#">order</button><br>onion dosa</td>
+            <td><img src="kfc.jpeg">      <br><button href="#">order</button><br> fryed chicken</td>
+        </tr>
+        <tr>
+            <td><img src="frys.jpeg">     <br><button href="#">order</button><br>finger chipes</td>
+            <td><img src="meal.jpeg">     <br><button href="#">order</button><br>kerala meal</td>
+            <td><img src="pastha.jpeg">   <br><button href="#">order</button><br>allo pastha</td>
+            <td><img src="thali.jpeg">    <br><button href="#">order</button><br>panjabi thali</td>
+        </tr>
+        <tr>
+            <td> <img src="parota.jpeg">  <br><button href="#">order</button><br>bun porotta</td>
+            <td><img src="idly.jpeg">     <br><button href="#">order</button><br>madurai idly</td>
+            <td> <img src="puri.jpeg">    <br><button href="#">order</button><br>andhra puri</td>
+            <td><img src="kulfi.jpeg">    <br><button href="#">order</button><br>badham kulfi</td>
+        </tr>
+    </table>
+    </center>
+</body>
+<footer>
+    <hr style="color: rgb(91, 38, 38);"> 
+    <center>
+   <p class="author">DISIGNED AND DEVLOPED BY </p><P class="name">CHANDRU.K</P>
+ </center>
+ </footer
+<style>
+    .body{
+        background-image:bgimage.jpeg ;
+    }
+</style>
+</html>
+
+menu.css
+
+*
+table{
+   align-content: center; 
+   margin-top: 140px;
+}
+body{
+    background-image:url(bgiamge2.jpg) ;
+    background-size: cover;
+    backdrop-filter: blur(6px),darken(30px);
+}
+h1{
+    word-spacing: 4px;
+    color: rgba(207, 20, 20, 0.855);}
+li{
+    float: left;
+    list-style: none;
+}
+
+ul li a{
+display: flex;
+padding-left: 50px;
+padding-right: 50px;
+color: aquamarine;
+}
+ul li a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.menu{
+    margin-top: 60px;
+    margin-left: 110px;
+    border-width: 30px;
+    border-color: aquamarine;
+    background-color: rgb(84, 92, 92);
+    display: inline-flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(176, 129, 100);
+    border-radius:  25px}
+
+td{
+    background-color: blanchedalmond;
+    padding: 9px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+button{
+    width: 60px;
+    height: 20px;
+    color: brown;
+
+}
+button :hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+footer .author{
+    color: rgb(245, 126, 7);
+    
+}
+footer .name{
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 50px;
+    font-size: larger;
+    color: rgb(220, 22, 68);
+}
+
+admin.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <center>
+        <h1>OUR ADMINISRATOES</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="res.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="admin.html">ADMINISTRATION</a></li>
+                <li><a href="contect.html">CONTACT US</a></li>
+            </ul> 
+        </div>
+    <table>
+        <tr>
+            <td><img src="chef1.jpg"> <P>CHEF:Saravanan<br>CEO of saravanabavan.pvt.limited</P>  </td>
+           <td><img src="chef2.jpg"> <p>CHEF:THAMU<br>most famose Indian celebrity chef</p> </td>
+            <td><img src="chef3.jpg">  <p>CHEF:vankat bhat<br>most famose Indian celebrity chef</p>   </td>
+        
+        </tr>
+        <tr>
+            <td><img src="chef4.jpg">  <p>CHEF:kunnal kapuur<br>chif cook in taj hotels.pvt.limited</p>   </td>
+            <td><img src="CHEF5.jpg"> <p>CHEF:Dalmia<br> first indian woman who won master chef tittle</p>    </td>
+            <td><img src="chef6.jpg">  <P>CHEF:Garmaiya <br>very popular youtube channek chef</P> </td>
+        </tr>
+       
+    </table>
+    </center>
+</body> 
+<footer>
+    <hr style="color: rgb(91, 38, 38);"> 
+ </footer
+
+
+</html>
+
+asmin.css
+
+header{
+    ;
+}
+.name{
+    margin-top: 13px;
+    margin-left: 45%;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 39px;
+    color: rgba(215, 49, 7, 0.803);
+    
+}
+.name2{
+    font-family: cursive;
+    font-size: 37px;
+    color: rgba(222, 215, 13, 0.97);
+    font-weight: bold;
+    
+}
+li{
+    float: left;
+    list-style: none;
+}
+
+ul li a{
+display: flex;
+padding-left: 50px;
+padding-right: 50px;
+color: aquamarine;
+}
+ul li a:hover{
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+.menu{
+    margin-top: 40px;
+    margin-left: 80px;
+    border-width: 30px;
+    border-color: aquamarine;
+    background-color: rgb(84, 92, 92);
+    display: inline-flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(176, 129, 100);
+    border-radius:  25px;
+}
+.food{
+    margin-top: 90px;
+    padding: 14px;
+}
+td{
+padding: 20px;
+background-color:rgba(15, 1, 1, 0.636);
+border-width: px;
+border-radius: 18px;
+white-space: 5px;
+color: azure;
+}
+tr{
+    padding: 5px;
+}
+p{
+    font-weight: bolder;
+    align-items: center;
+}
+img{
+    align-items: center;
+}  
+
+footer .author{
+    color: rgb(245, 126, 7);
+    
+}
+footer .name{
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 50px;
+    font-size: larger;
+    color: rgb(220, 22, 68);
+}
+table tr td img{
+    border-radius: 50%;
+}
+table{
+    margin-top: 80px;
+}
+
+contect.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link rel="stylesheet" href="contect.css">
+</head>
+<body>
+    <center>
+        <h1>CONTECT US</h1>
+        <div class="menu">
+            <ul>
+                <li><a href="res.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="admin.html">ADMINISTRATION</a></li>
+                <li><a href="contect.html">CONTACT US</a></li>
+            </ul> 
+        </div>
+        </center>
+        <div class="form">
+           <center> 
+            <h1>contect us</h1>
+            <input type="name" name="name" placeholder="Enter your name here">
+            <input type="name" placeholder="Enter your number">
+            <input type="number" name="" placeholder="Enter age here">
+            <button class="btrn"><a href="#">send massage</a></button>
+            <h1>our contect No:98765432</h1>
+        </center>
+       </div>
+        </body>
+        </html>
+
+contect.css
+
+header{
+    ;
+}
+.name{
+    margin-top: 13px;
+    margin-left: 45%;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 39px;
+    color: rgba(215, 49, 7, 0.803);
+    
+}
+.name2{
+    font-family: cursive;
+    font-size: 37px;
+    color: rgba(222, 215, 13, 0.97);
+    font-weight: bold;
+    
+}
+li{
+    float: left;
+    list-style: none;
+}
+
+ul li a{
+display: flex;
+padding-left: 50px;
+padding-right: 50px;
+color: aquamarine;
+}
+ul li a:hover{
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+.menu{
+    margin-top: 40px;
+    margin-left: 80px;
+    border-width: 30px;
+    border-color: aquamarine;
+    background-color: rgb(84, 92, 92);
+    display: inline-flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(176, 129, 100);
+    border-radius:  25px;
+}
+.form{
+    width: 320px;
+    height: 350px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    border: 3px;
+    border-style: groove;                
+    align-items: center;
+}
+.form h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: #de1212;
+    width: 220px;
+    font-size: 22px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin: 2px;
+    padding: 8px;
+
+}
+
+.form input{
+    background: transparent;
+    width: 240px;
+    height: 28px;
+     border-bottom: 1px solid  #de1212;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     color: aliceblue;
+     font-size: 10px;
+     letter-spacing: 1px;
+     margin-top: 25px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form input :focus{
+    outline: none;
+}
+
+::placeholder{
+    color: aliceblue;
+    font-family: arial;
+
+}
+
+.btrn{
+    width: 240px;
+    height: 40px;
+    background: #de1212;
+    margin-top: 26px;
+    font-size: 16px;
+    border-radius:10px;
+    cursor: pointer;
+    color: rgb(235, 239, 242);
+    transition: 0.4s ea;
+}
+
+.btrn :hover{
+    background: #f3f6f7;
+    color: #de1271;
+    width: 240px;
+    height: 40px;
+}
+.btrn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font size: 17px;
+    text align:center;
+    padding-top:20px
+
+}
+.form .link a{
+    text-decoration:none;
+    color: #de1212;
+}
+.liw{padding-bottom: 10px;
+    text-align: center;
+    padding-top: 14px;
+    
+
+}
+.icons a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.icons ion-icon{
+    color: aliceblue;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+}
+
 ~~~
 # OUTPUT:
-![Screenshot (103)](https://github.com/user-attachments/assets/aa62ddd8-baff-4464-9c25-f735726d9477)
+![Screenshot 2024-12-23 105023](https://github.com/user-attachments/assets/2d8efd87-79a5-4182-846e-76858f7d6c7b)
+
 
 menu's
 
-![Screenshot (104)](https://github.com/user-attachments/assets/64e27399-433c-49c4-af9d-4eaa21b575fc)
+![Screenshot 2024-12-23 105137](https://github.com/user-attachments/assets/48315e2b-6429-4f3b-b62f-4045e57dbd4d)
 
-footer
 
-![Screenshot (105)](https://github.com/user-attachments/assets/33dffb32-57cd-486a-93b0-a58afd29158a)
+
+
+
+
+
+
+
 
 
 
