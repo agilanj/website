@@ -664,6 +664,11 @@ menu's
 
 ![Screenshot 2024-12-23 105137](https://github.com/user-attachments/assets/48315e2b-6429-4f3b-b62f-4045e57dbd4d)
 
+contact us
+
+![Screenshot 2024-12-24 110358](https://github.com/user-attachments/assets/b6bc2016-84fb-40a7-a2e9-8edd155f6697)
+
+
 
 
 
